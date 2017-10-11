@@ -1,5 +1,14 @@
-module.exports = function() {
-  let greet = document.createElement('div');
-  greet.innerHTML = `<div>Koo</div><div>david<br>koo<br>john!</div>`;
-  return greet;
-};
+import hi from './data.json'
+import React, {Component} from 'react';
+
+class Greeter extends Component{
+  render() {
+    return (
+      <div>
+        {hi.text}
+      </div>
+    );
+  }
+}
+
+export default Greeter;

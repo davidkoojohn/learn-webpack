@@ -1,6 +1,8 @@
-const greeter = require('./app/Greeter');
+import React from 'react';
+import {render} from 'react-dom';
+import Greeter from './app/Greeter';
 
-const app = document.getElementById('app');
+import './app/main.css';
 
-app.appendChild(greeter());
+render(<Greeter />, document.getElementById('app'));
 
